@@ -33,4 +33,4 @@ const Navrbar = () => {
     </div>
   )
 }
-export default Navrbar
+export default Navrbar;

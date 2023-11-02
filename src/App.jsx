@@ -6,13 +6,9 @@ import Navrbar from './components/Navbar/Navrbar';
 import './App.css';
 
 function App() {
-  return (
-    <>
-      <div className="App">
+  return <div>
         <Navrbar/>
-      </div>
-    </>
-  );
+    </div>;
 }
 
 export default App
