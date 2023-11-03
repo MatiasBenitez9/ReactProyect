@@ -1,36 +1,36 @@
-import React from 'react';
-import './Navbar.css'; 
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const Navrbar = () => {
+const Navrbar = () =>{
   return (
-    <div className="navbar-wrapper">
-      <nav className="navbar">
-        <div className="container">
-          <a href="/" className="navbar-brand">Mi Sitio</a>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a href="/" className="nav-link">Inicio</a>
-            </li>
-            <li className="nav-item">
-              <a href="/acerca" className="nav-link">Acerca de</a>
-            </li>
-            <li className="nav-item">
-              <a href="/contacto" className="nav-link">Contacto</a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="categoriasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categorías
-              </a>
-              <div className="dropdown-menu" aria-labelledby="categoriasDropdown">
-                <a className="dropdown-item" href="/ropa-hombre">Ropa de Hombre</a>
-                <a className="dropdown-item" href="/ropa-mujer">Ropa de Mujer</a>
-                <a className="dropdown-item" href="/ropa-ninos">Ropa de Niños</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  )
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">Tienda Oeste Outlet</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Ofertas</Nav.Link>
+            <Nav.Link href="#home">Outlet</Nav.Link>
+            <Nav.Link href="#home">Contacto</Nav.Link>
+            <Nav.Link href="#link">Sobre Nosotros</Nav.Link>
+            <NavDropdown title="Categorias" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Hombres</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Mujeres
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Niños</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                SALE
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
+
 export default Navrbar;

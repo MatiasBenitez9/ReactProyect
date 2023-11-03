@@ -1,38 +1,56 @@
-.navbar-wrapper {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar-brand {
-    font-size: 24px;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .navbar-brand:hover {
-    text-decoration: underline;
-  }
-  
-  .navbar-nav {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-item {
-    margin-right: 10px;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: white;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+navbar-wrapper {
+  background-color: #333; /* Color de fondo de la barra de navegación */
+  position: fixed; /* La barra de navegación se mantiene fija en la parte superior */
+  width: 100%; /* Ocupa todo el ancho */
+  top: 0;
+  z-index: 100; /* Para que esté por encima de otros elementos */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido */
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  color: #fff; /* Color del texto del logotipo */
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: #fff; /* Color del texto de los enlaces */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón sobre un enlace */
+}
   
   .nav-link:hover {
     text-decoration: underline;
