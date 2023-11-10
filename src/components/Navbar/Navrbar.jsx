@@ -7,7 +7,7 @@ const Navrbar = () =>{
   return (
     <Navbar expand="lg" className="bg-secondary" >
       <Container>
-        <Navbar.Brand href="#home">Tienda Oeste Outlet</Navbar.Brand>
+        <Navbar.Brand href="#home">Tienda Oeste Outlet-</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
