@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import CarwidgetComponent from '../../CarwidgetComponent/CarwidgetComponet';
 
 const Navrbar = () =>{
   return (
@@ -27,6 +28,7 @@ const Navrbar = () =>{
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+          <CarwidgetComponent />
         </Navbar.Collapse>
       </Container>
     </Navbar>

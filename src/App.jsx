@@ -4,10 +4,12 @@
 // import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navrbar from './components/Navbar/Navrbar';
+import ItemListContainer from './ItemListContainer/ItemListContainer';
 
 function App() {
   return <div>
         <Navrbar/>
+        <ItemListContainer greeting="Bienvenidos a la Tienda Outlet" />
     </div>;
 }
 

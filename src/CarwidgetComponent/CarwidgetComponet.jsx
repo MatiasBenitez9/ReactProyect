@@ -1,11 +1,13 @@
- const CarwidgetComponent = () => {
-    return {
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faShop} from '@fortawesome/free-solid-svg-icons';
+ const CarwidgetComponent = ( ) => { 
+    return  (
         <div>
-            <span>Icono</span>
-            <span>10</span>       
+                <FontAwesomeIcon icon={faShop} />
+                <span>35</span>
         </div>
-    }
-
+    )
+        
  }
 
  export default CarwidgetComponent;
