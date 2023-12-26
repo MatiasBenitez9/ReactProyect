@@ -4,6 +4,22 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CarwidgetComponent from '../../CarwidgetComponent/CarwidgetComponet';
 
+
+const NavbarWithRopa = () => {
+  const RopaItems = [
+    'Camisetas',
+    'Pantalones',
+    'Vestidos',
+    'Chaquetas',
+    'Jeans',
+    'Faldas',
+    'Sweaters',
+    'Ropa deportiva',
+    'Ropa interior',
+    'Abrigos'
+  ];
+}
+
 const Navrbar = () =>{
   return (
     <Navbar expand="lg" className="bg-secondary" >
